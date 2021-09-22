@@ -1,11 +1,11 @@
-package GetWindowsBuildVersion
+package WindowsBuildVersion
 
 import (
 	"testing"
 )
 
-func TestGetWindowBuildVersion(t *testing.T) {
-	version, err := GetWindowBuildVersion()
+func TestGetVersion(t *testing.T) {
+	version, err := GetVersion()
 	if version == nil || err != nil {
 		t.Fatalf("Failed collecting Version struct, %q, %s", version, err)
 	}

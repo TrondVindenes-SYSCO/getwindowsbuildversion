@@ -1,4 +1,4 @@
-package GetWindowsBuildVersion
+package WindowsBuildVersion
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type Version struct {
 	Patch int
 }
 
-func GetWindowBuildVersion() (*Version, error) {
+func GetVersion() (*Version, error) {
 	var versionInfo []Win32_OperatingSystem
 
 	q := wmi.CreateQuery(&versionInfo, "")

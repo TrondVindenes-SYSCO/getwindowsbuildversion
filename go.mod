@@ -1,4 +1,4 @@
-module github.com/trondvindenes-sysco/getwindowsbuildversion
+module github.com/trondvindenes-sysco/windowsbuildversion
 
 go 1.17
 
